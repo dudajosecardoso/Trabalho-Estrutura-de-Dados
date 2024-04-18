@@ -1,3 +1,5 @@
+import Stack*
+
 def precedence(op1,op2):
     precedence= {
         '+': 1,
