@@ -1,11 +1,13 @@
-import Stack*
+from Stack import*
 
 def precedence(op1,op2):
     precedence= {
         '+': 1,
         '-': 1,
         '*': 2,
-        '/': 2
+        '/': 2,
+        '(': 3,
+        ')': 3
     }
 
     return precedence[op1]>precedence[op2]
